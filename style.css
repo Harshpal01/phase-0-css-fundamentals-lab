@@ -1,5 +1,75 @@
+/* Apply general styles to the whole page */
 body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 1. Center the Header */
+h1 {
+  text-align: center;
+}
+
+/* 2. Center the Image */
+img {
+  display: block;
+  margin: 0 auto;
+  width: 900px; /* Adjust width if necessary */
+}
+
+/* 3. Style the Navigation Links */
+nav {
+  text-align: center;
+  padding: 10px;
+  background-color: grey; /* Background color for navbar */
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* 4. Style the Image Caption */
+.caption {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 5. Update the Text Block */
+#featured-property p {
+  width: 800px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 6. Make the #details Section Horizontal */
+#details div {
+  float: left;
+  width: 25%;
+  text-align: center;
+  background-color: lightgrey;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 7. Bottom Section Styling */
+.bottom-section div {
+  background-color: lightgrey;
+  width: 25%;
+  text-align: center;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 8. Clear Floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
